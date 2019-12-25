@@ -1,2 +1,2 @@
 # portfolio-website
-Currently a work in progress! 
+Currently a <strong>work in progress!<strong> 
