@@ -1,11 +1,11 @@
 // Variables
 $website-width: 1050px;
-$link-hover-color: lightblue;
+$link-hover-color: #fcfdfc;
 $bg-image: url("../dist/img/myimg/anime-1.jpg");
 $text-color: white;
-$main-color:  black;
-$light-color: #8BAFC7;
-$link-color: white;
+$main-color: rgb(107, 167, 144);
+$light-color: #8bafc7;
+$link-color: #b8f0ff;
 $dark-color: black;
 
 // Utility classes
@@ -207,7 +207,14 @@ img {
 // Home Sections
 #home {
   // Targeting the home-a ID
+  // Home Section A
   &-a {
+    h2.section-title {
+      // Only take up as much space as content of element.
+      display: inline;
+      border-bottom: 3px solid $main-color;
+    }
+
     .specials {
       margin-top: 2rem;
       display: grid;
@@ -220,6 +227,44 @@ img {
         width: 50px;
         height: 50px;
       }
-    } 
+    }
+  }
+
+  // Home Section B
+  &-b {
+    .general {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        line-height: 2;
+
+        &.general-title {
+          font-size: 1.5rem;
+        }
+
+        &.general-info {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+
+      img[class^="icon-"] {
+        width: 70px;
+        height: 70px;
+      }
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(odd) {
+          background-color: lightslategray;
+        }
+
+        &:nth-child(even) {
+          background-color: lightpink;
+        }
+      }
+    }
   }
 }

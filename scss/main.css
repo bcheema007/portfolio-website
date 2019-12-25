@@ -16,12 +16,12 @@
 
 .btn-main {
   color: white;
-  background: black;
+  background: #6ba790;
 }
 
 .btn-light {
   color: white;
-  background: #8BAFC7;
+  background: #8bafc7;
 }
 
 .btn-dark {
@@ -32,7 +32,7 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: black;
+  background-color: #6ba790;
 }
 
 .lead {
@@ -91,7 +91,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #b8f0ff;
 }
 
 ul {
@@ -138,11 +138,11 @@ img {
 }
 
 #main-nav a:hover {
-  border-color: lightblue;
+  border-color: #fcfdfc;
 }
 
 #main-nav a.current {
-  border-color: black;
+  border-color: #6ba790;
 }
 
 #header-home {
@@ -161,6 +161,11 @@ img {
   line-height: 1.2;
 }
 
+#home-a h2.section-title {
+  display: inline;
+  border-bottom: 3px solid #6ba790;
+}
+
 #home-a .specials {
   margin-top: 2rem;
   display: -ms-grid;
@@ -173,5 +178,42 @@ img {
 #home-a .specials img[class^="icon-"] {
   width: 50px;
   height: 50px;
+}
+
+#home-b .general {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+#home-b .general li {
+  line-height: 2;
+}
+
+#home-b .general li.general-title {
+  font-size: 1.5rem;
+}
+
+#home-b .general li.general-info {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#home-b .general img[class^="icon-"] {
+  width: 70px;
+  height: 70px;
+}
+
+#home-b .general div {
+  padding: 3rem 0;
+}
+
+#home-b .general div:nth-child(odd) {
+  background-color: lightslategray;
+}
+
+#home-b .general div:nth-child(even) {
+  background-color: lightpink;
 }
 /*# sourceMappingURL=main.css.map */
