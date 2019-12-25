@@ -1,0 +1,225 @@
+// Variables
+$website-width: 1050px;
+$link-hover-color: lightblue;
+$bg-image: url("../dist/img/myimg/anime-1.jpg");
+$text-color: white;
+$main-color:  black;
+$light-color: #8BAFC7;
+$link-color: white;
+$dark-color: black;
+
+// Utility classes
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  // center container elements
+  margin: auto;
+  // No scrollbars
+  overflow: hidden;
+}
+
+// Buttons
+// All buttons will share this style of %btn-shared
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  // &-main == a class of btn-main
+  &-main {
+    // Have all the properties that were declared in %btn-shared
+    @extend %btn-shared;
+    color: $text-color;
+    background: $main-color;
+  }
+
+  &-light {
+    // Have all the properties that were declared in %btn-shared
+    @extend %btn-shared;
+    color: $text-color;
+    background: $light-color;
+  }
+
+  &-dark {
+    // Have all the properties that were declared in %btn-shared
+    @extend %btn-shared;
+    color: $text-color;
+    background: $dark-color;
+  }
+}
+
+// Any button, <a>, or input element with a class of btn-"something here" will have this hover effect take place. Notice the '^' carrot symbol.
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding Classes for top and bottom padding.
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// Margin Classes for top and bottom margins.
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+
+  &-2 {
+    margin: 2rem 0;
+  }
+
+  &-3 {
+    margin: 3rem 0;
+  }
+
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.5;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+ul {
+  list-style: none;
+}
+
+// Keep images in their container
+img {
+  width: 100%;
+}
+
+// Naruto Logo
+#logo {
+  width: 60px;
+  height: 60px;
+}
+
+// Main-nav
+#main-nav {
+  display: flex;
+  // justify-content affects horizontal axis and space-between will put logo on left side and the ul/list elments on the right
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    // Transition has a duration of half a second.
+    transition: border-color 0.5s;
+
+    // &:hover == a:hover
+    &:hover {
+      border-color: $link-hover-color;
+    }
+
+    // Targets the <a> element which has a class of current
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Header
+#header {
+  // & means the id of header
+  &-home {
+    // Header Home
+    background: $bg-image no-repeat center right / cover;
+    // Take up whole page
+    height: 100vh;
+    color: white;
+
+    // Header Content
+    .header-content {
+      text-align: center;
+      // Relative to parent-element height
+      padding-top: 16.5%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      // Shortens the line height of the text so it isn't so spaced out and looks better.
+      line-height: 1.2;
+    }
+  }
+
+  // Header Inner
+  &-inner {
+  }
+}
+
+// Home Sections
+#home {
+  // Targeting the home-a ID
+  &-a {
+    .specials {
+      margin-top: 2rem;
+      display: grid;
+      grid-gap: 1rem;
+      // You can add more columns later.
+      grid-template-columns: repeat(3, 1fr);
+
+      // Any img element with a class of icon-"something here" will have this effect take place. Notice the '^' carrot symbol.
+      img[class^="icon-"] {
+        width: 50px;
+        height: 50px;
+      }
+    } 
+  }
+}
