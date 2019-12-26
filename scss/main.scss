@@ -1,13 +1,13 @@
 // Variables
 $website-width: 1050px;
 $bg-image: url("../dist/img/myimg/anime-1.jpg");
-$link-color: #E8E163;
-$link-hover-color: #4888C8;
-$main-color: #7FC5DC;
+$link-color: #e8e163;
+$link-hover-color: #4888c8;
+$main-color: #7fc5dc;
 $text-color: white;
 $light-color: #8bafc7;
 $medium-color: #173679;
-$dark-color: #0B1E38;
+$dark-color: #0b1e38;
 
 // Utility classes
 .container {
@@ -53,7 +53,7 @@ $dark-color: #0B1E38;
   }
 }
 
-// Backgrounds 
+// Backgrounds
 .bg {
   &-main {
     background-color: $main-color;
@@ -132,7 +132,8 @@ input[class^="btn-"]:hover {
 
 .section-title {
   font-size: 1.7rem;
-  display: block;
+  display: inline;
+  border-bottom: 2px solid $main-color;
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
@@ -244,13 +245,7 @@ img {
   // Targeting the home-a ID
   // Home Section A
   &-a {
-    h2.section-title {
-      // Only take up as much space as content of element.
-      display: inline;
-      border-bottom: 2px solid $main-color;
-    }
-
-    .specials {
+      .specials {
       margin-top: 2rem;
       display: grid;
       grid-gap: 1rem;
@@ -315,11 +310,6 @@ img {
 
   // Home Section C
   &-c {
-    h2.section-title {
-      display: inline;
-      border-bottom: 2px solid $main-color;
-    }
-
     .process {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -334,25 +324,18 @@ img {
       h3 {
         margin-top: -10px;
       }
-
     }
   }
-
 }
 
 // About Sections
 #about {
   &-a {
-    h2.section-title {
-      display: inline;
-      border-bottom: 2px solid $main-color;
-    }
-
     .about-info {
       display: grid;
-      grid-template-areas: 
-      'bioimage bio bio'
-      'reading anime video';
+      grid-template-areas:
+        "bioimage bio bio"
+        "reading anime video";
       grid-gap: 1.2rem;
     }
 
@@ -390,8 +373,12 @@ img {
       border-bottom: 2px solid $main-color;
     }
 
+    p.top-p {
+      margin-top: 0.8rem;
+    }
+
     div.bio > p {
-      font-size: 18px; 
+      padding-bottom: 16px;
     }
 
     div.bio > p:nth-of-type(1),
@@ -399,8 +386,75 @@ img {
       display: inline-block;
       border-bottom: 2px solid $dark-color;
     }
+  }
+}
+
+// Resume
+#resume {
+  // Resume Section A: General Information
+  &-a {
+    .information {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 
+      'address address phone'
+      'name name name'
+      'github email email';
+      grid-gap: 1.5rem;
+
+      .address,
+      .github,
+      .phone,
+      .email {
+        font-size: 20px;
+      }
+
+      .github a,
+      .email a {
+        color: $link-hover-color;
+      }
+
+      .address {
+        grid-area: address;
+        text-align: left;
+        align-self: start;
+        justify-self: start;
+      }
+
+      .github {
+        grid-area: github;
+        text-align: left;
+        align-self: end;
+      }
+
+      .email {
+        grid-area: email;
+        text-align: right;
+        align-self: end;
+      }
+
+      .phone {
+        grid-area: phone;
+        text-align: right;
+      }
+
+      .name {
+        grid-area: name;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 900;
+      }
+    }
+  }
+
+  // Resume Section B: Education
+  &-b {
 
   }
+
 }
 
 // Footer
@@ -425,11 +479,23 @@ img {
 
       &:hover {
         background-color: $main-color;
+        cursor: pointer;
       }
     }
 
     .social a {
       color: $text-color;
+    }
+
+    .social .fa-linkedin {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .social .fa-github,
+    .social .fa-twitter {
+      padding-left: 9.5px;
+      padding-right: 9.5px;
     }
   }
 }

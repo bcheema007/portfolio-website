@@ -16,7 +16,7 @@
 
 .btn-main {
   color: white;
-  background: #7FC5DC;
+  background: #7fc5dc;
 }
 
 .btn-light {
@@ -26,16 +26,16 @@
 
 .btn-dark {
   color: white;
-  background: #0B1E38;
+  background: #0b1e38;
 }
 
 .bg-main {
-  background-color: #7FC5DC;
+  background-color: #7fc5dc;
   color: white;
 }
 
 .bg-dark {
-  background-color: #0B1E38;
+  background-color: #0b1e38;
   color: white;
 }
 
@@ -52,7 +52,7 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #7FC5DC;
+  background-color: #7fc5dc;
 }
 
 .lead {
@@ -98,7 +98,8 @@ input[class^="btn-"]:hover {
 
 .section-title {
   font-size: 1.7rem;
-  display: block;
+  display: inline;
+  border-bottom: 2px solid #7fc5dc;
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
@@ -119,7 +120,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #E8E163;
+  color: #e8e163;
 }
 
 ul {
@@ -166,11 +167,11 @@ img {
 }
 
 #main-nav a:hover {
-  border-color: #4888C8;
+  border-color: #4888c8;
 }
 
 #main-nav a.current {
-  border-color: #7FC5DC;
+  border-color: #7fc5dc;
 }
 
 #header-home {
@@ -192,12 +193,7 @@ img {
 #header-inner {
   background: url("../dist/img/myimg/anime-1.jpg") no-repeat 20% 10%/cover;
   height: 5.5rem;
-  border-bottom: 3px solid #7FC5DC;
-}
-
-#home-a h2.section-title {
-  display: inline;
-  border-bottom: 2px solid #7FC5DC;
+  border-bottom: 3px solid #7fc5dc;
 }
 
 #home-a .specials {
@@ -227,7 +223,7 @@ img {
 
 #home-b .general li.general-title {
   font-size: 1.5rem;
-  color: #E8E163;
+  color: #e8e163;
 }
 
 #home-b .general li.general-info {
@@ -241,7 +237,7 @@ img {
 }
 
 #home-b .general li.general-info > a span.color-link {
-  color: #4888C8;
+  color: #4888c8;
 }
 
 #home-b .general img[class^="icon-"] {
@@ -254,16 +250,11 @@ img {
 }
 
 #home-b .general div:nth-child(odd) {
-  background-color: #0B1E38;
+  background-color: #0b1e38;
 }
 
 #home-b .general div:nth-child(even) {
   background-color: #173679;
-}
-
-#home-c h2.section-title {
-  display: inline;
-  border-bottom: 2px solid #7FC5DC;
 }
 
 #home-c .process {
@@ -284,15 +275,10 @@ img {
   margin-top: -10px;
 }
 
-#about-a h2.section-title {
-  display: inline;
-  border-bottom: 2px solid #7FC5DC;
-}
-
 #about-a .about-info {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'bioimage bio bio' 'reading anime video';
+      grid-template-areas: "bioimage bio bio" "reading anime video";
   grid-gap: 1.2rem;
 }
 
@@ -307,7 +293,7 @@ img {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: bio;
-  border-left: 3px solid #7FC5DC;
+  border-left: 3px solid #7fc5dc;
   padding: 0.8rem;
 }
 
@@ -337,21 +323,105 @@ img {
 #about-a h4 {
   font-size: 20px;
   display: inline;
-  border-bottom: 2px solid #7FC5DC;
+  border-bottom: 2px solid #7fc5dc;
+}
+
+#about-a p.top-p {
+  margin-top: 0.8rem;
 }
 
 #about-a div.bio > p {
-  font-size: 18px;
+  padding-bottom: 16px;
 }
 
 #about-a div.bio > p:nth-of-type(1),
 #about-a div.bio > p:nth-of-type(2) {
   display: inline-block;
-  border-bottom: 2px solid #0B1E38;
+  border-bottom: 2px solid #0b1e38;
+}
+
+#resume-a .information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 'address address phone' 'name name name' 'github email email';
+  grid-gap: 1.5rem;
+}
+
+#resume-a .information .address,
+#resume-a .information .github,
+#resume-a .information .phone,
+#resume-a .information .email {
+  font-size: 20px;
+}
+
+#resume-a .information .github a,
+#resume-a .information .email a {
+  color: #4888c8;
+}
+
+#resume-a .information .address {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: address;
+  text-align: left;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+#resume-a .information .github {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: github;
+  text-align: left;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#resume-a .information .email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: email;
+  text-align: right;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#resume-a .information .phone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: phone;
+  text-align: right;
+}
+
+#resume-a .information .name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: name;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 #main-footer {
-  background-color: #0B1E38;
+  background-color: #0b1e38;
   color: white;
   height: 4rem;
 }
@@ -378,10 +448,22 @@ img {
 }
 
 #main-footer .footer-content .social .fab:hover {
-  background-color: #7FC5DC;
+  background-color: #7fc5dc;
+  cursor: pointer;
 }
 
 #main-footer .footer-content .social a {
   color: white;
+}
+
+#main-footer .footer-content .social .fa-linkedin {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#main-footer .footer-content .social .fa-github,
+#main-footer .footer-content .social .fa-twitter {
+  padding-left: 9.5px;
+  padding-right: 9.5px;
 }
 /*# sourceMappingURL=main.css.map */
