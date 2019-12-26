@@ -347,7 +347,7 @@ img {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: 'address address phone' 'name name name' 'github email email';
+      grid-template-areas: "address address phone" "name name name" "github email email";
   grid-gap: 1.5rem;
 }
 
@@ -418,6 +418,139 @@ img {
           justify-content: center;
   font-size: 30px;
   font-weight: 900;
+}
+
+#resume-b h2.section-title {
+  border: none;
+}
+
+#resume-b span.location,
+#resume-b span.school-name,
+#resume-b span.time,
+#resume-b span.major,
+#resume-b span.coursework {
+  font-weight: 900;
+}
+
+#resume-b .education {
+  font-size: 20px;
+}
+
+#resume-b .location,
+#resume-b .school-name,
+#resume-b .time {
+  text-align: center;
+}
+
+#resume-b .uni-tacoma {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas: "location school time" "ul ul ul";
+  grid-gap: 1.0rem 2rem;
+  margin-bottom: 75px;
+}
+
+#resume-b .uni-tacoma .location {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: location;
+}
+
+#resume-b .uni-tacoma .school-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: school;
+}
+
+#resume-b .uni-tacoma .time {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: time;
+}
+
+#resume-b .uni-tacoma ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ul;
+}
+
+#resume-b .college {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas: "location school time" "ul ul ul";
+  grid-gap: 1.0rem 2.5rem;
+  margin-bottom: 75px;
+}
+
+#resume-b .college .location {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: location;
+}
+
+#resume-b .college .school-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: school;
+}
+
+#resume-b .college .time {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: time;
+}
+
+#resume-b .college ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ul;
+}
+
+#resume-b .uni-bothell {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas: "location school time" "ul ul ul";
+  grid-gap: 1.0rem 2.5rem;
+  margin-bottom: 75px;
+}
+
+#resume-b .uni-bothell .location {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: location;
+}
+
+#resume-b .uni-bothell .school-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: school;
+}
+
+#resume-b .uni-bothell .time {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: time;
+}
+
+#resume-b .uni-bothell ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ul;
 }
 
 #main-footer {

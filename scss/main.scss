@@ -245,7 +245,7 @@ img {
   // Targeting the home-a ID
   // Home Section A
   &-a {
-      .specials {
+    .specials {
       margin-top: 2rem;
       display: grid;
       grid-gap: 1rem;
@@ -397,10 +397,10 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: 
-      'address address phone'
-      'name name name'
-      'github email email';
+      grid-template-areas:
+        "address address phone"
+        "name name name"
+        "github email email";
       grid-gap: 1.5rem;
 
       .address,
@@ -452,9 +452,112 @@ img {
 
   // Resume Section B: Education
   &-b {
+    h2.section-title {
+      border: none;
+    }
+
+    span.location,
+    span.school-name,
+    span.time,
+    span.major,
+    span.coursework {
+      font-weight: 900;
+    }
+
+    .education {
+      font-size: 20px;
+    }
+
+    .location,
+    .school-name,
+    .time {
+      text-align: center;
+    }
+
+    .uni-tacoma {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas:
+        "location school time"
+        "ul ul ul";
+      grid-gap: 1.0rem 2rem;
+      margin-bottom: 75px;
+
+      .location {
+        grid-area: location;
+      }
+
+      .school-name {
+        grid-area: school;
+      }
+
+      .time {
+        grid-area: time;
+      }
+
+      ul {
+        grid-area: ul;
+      }
+    }
+
+    .college {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas:
+        "location school time"
+        "ul ul ul";
+      grid-gap: 1.0rem 2.5rem;
+      margin-bottom: 75px;
+
+        .location {
+          grid-area: location;
+        }
+  
+        .school-name {
+          grid-area: school;
+        }
+  
+        .time {
+          grid-area: time;
+        }
+  
+        ul {
+          grid-area: ul;
+        }
+
+    }
+
+    .uni-bothell {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-areas:
+        "location school time"
+        "ul ul ul";
+      grid-gap: 1.0rem 2.5rem;
+      margin-bottom: 75px;
+
+        .location {
+          grid-area: location;
+        }
+  
+        .school-name {
+          grid-area: school;
+        }
+  
+        .time {
+          grid-area: time;
+        }
+  
+        ul {
+          grid-area: ul;
+        }
+
+    }
 
   }
-
 }
 
 // Footer
