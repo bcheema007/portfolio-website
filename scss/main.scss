@@ -1,12 +1,13 @@
 // Variables
 $website-width: 1050px;
-$link-hover-color: #fcfdfc;
 $bg-image: url("../dist/img/myimg/anime-1.jpg");
+$link-color: #E8E163;
+$link-hover-color: #4888C8;
+$main-color: #7FC5DC;
 $text-color: white;
-$main-color: rgb(107, 167, 144);
 $light-color: #8bafc7;
-$link-color: #b8f0ff;
-$dark-color: black;
+$medium-color: #173679;
+$dark-color: #0B1E38;
 
 // Utility classes
 .container {
@@ -49,6 +50,29 @@ $dark-color: black;
     @extend %btn-shared;
     color: $text-color;
     background: $dark-color;
+  }
+}
+
+// Backgrounds 
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: $text-color;
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: $text-color;
+  }
+
+  &-main {
+    background-color: $light-color;
+    color: $text-color;
+  }
+
+  &-medium {
+    background-color: $medium-color;
+    color: $text-color;
   }
 }
 
@@ -104,6 +128,14 @@ input[class^="btn-"]:hover {
   &-4 {
     margin: 4rem 0;
   }
+}
+
+.section-title {
+  font-size: 1.7rem;
+  display: block;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 // General Styles
@@ -201,6 +233,9 @@ img {
 
   // Header Inner
   &-inner {
+    background: $bg-image no-repeat 20% 10% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -212,7 +247,7 @@ img {
     h2.section-title {
       // Only take up as much space as content of element.
       display: inline;
-      border-bottom: 3px solid $main-color;
+      border-bottom: 2px solid $main-color;
     }
 
     .specials {
@@ -241,11 +276,21 @@ img {
 
         &.general-title {
           font-size: 1.5rem;
+          color: $link-color;
         }
 
         &.general-info {
           font-size: 1rem;
           font-weight: bold;
+          color: white;
+        }
+
+        &.general-info > a {
+          color: white;
+        }
+
+        &.general-info > a span.color-link {
+          color: $link-hover-color;
         }
       }
 
@@ -258,13 +303,133 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background-color: lightslategray;
+          background-color: $dark-color;
         }
 
         &:nth-child(even) {
-          background-color: lightpink;
+          background-color: $medium-color;
         }
       }
+    }
+  }
+
+  // Home Section C
+  &-c {
+    h2.section-title {
+      display: inline;
+      border-bottom: 2px solid $main-color;
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      text-align: center;
+
+      img[class^="icon-"] {
+        width: 70px;
+        height: 70px;
+      }
+
+      h3 {
+        margin-top: -10px;
+      }
+
+    }
+  }
+
+}
+
+// About Sections
+#about {
+  &-a {
+    h2.section-title {
+      display: inline;
+      border-bottom: 2px solid $main-color;
+    }
+
+    .about-info {
+      display: grid;
+      grid-template-areas: 
+      'bioimage bio bio'
+      'reading anime video';
+      grid-gap: 1.2rem;
+    }
+
+    // Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .hobby-reading {
+      grid-area: reading;
+    }
+
+    .hobby-anime {
+      grid-area: anime;
+    }
+
+    .hobby-video-games {
+      grid-area: video;
+    }
+
+    img[class^="icon-"] {
+      width: 80px;
+      height: 80px;
+    }
+
+    h4 {
+      font-size: 20px;
+      display: inline;
+      border-bottom: 2px solid $main-color;
+    }
+
+    div.bio > p {
+      font-size: 18px; 
+    }
+
+    div.bio > p:nth-of-type(1),
+    div.bio > p:nth-of-type(2) {
+      display: inline-block;
+      border-bottom: 2px solid $dark-color;
+    }
+
+  }
+}
+
+// Footer
+#main-footer {
+  background-color: $dark-color;
+  color: $text-color;
+  height: 4rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+
+    // Social media icons
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px white solid;
+      border-radius: 50%;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $main-color;
+      }
+    }
+
+    .social a {
+      color: $text-color;
     }
   }
 }

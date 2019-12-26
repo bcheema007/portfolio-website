@@ -16,7 +16,7 @@
 
 .btn-main {
   color: white;
-  background: #6ba790;
+  background: #7FC5DC;
 }
 
 .btn-light {
@@ -26,13 +26,33 @@
 
 .btn-dark {
   color: white;
-  background: black;
+  background: #0B1E38;
+}
+
+.bg-main {
+  background-color: #7FC5DC;
+  color: white;
+}
+
+.bg-dark {
+  background-color: #0B1E38;
+  color: white;
+}
+
+.bg-main {
+  background-color: #8bafc7;
+  color: white;
+}
+
+.bg-medium {
+  background-color: #173679;
+  color: white;
 }
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #6ba790;
+  background-color: #7FC5DC;
 }
 
 .lead {
@@ -76,6 +96,14 @@ input[class^="btn-"]:hover {
   margin: 4rem 0;
 }
 
+.section-title {
+  font-size: 1.7rem;
+  display: block;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -91,7 +119,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #b8f0ff;
+  color: #E8E163;
 }
 
 ul {
@@ -138,11 +166,11 @@ img {
 }
 
 #main-nav a:hover {
-  border-color: #fcfdfc;
+  border-color: #4888C8;
 }
 
 #main-nav a.current {
-  border-color: #6ba790;
+  border-color: #7FC5DC;
 }
 
 #header-home {
@@ -161,9 +189,15 @@ img {
   line-height: 1.2;
 }
 
+#header-inner {
+  background: url("../dist/img/myimg/anime-1.jpg") no-repeat 20% 10%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #7FC5DC;
+}
+
 #home-a h2.section-title {
   display: inline;
-  border-bottom: 3px solid #6ba790;
+  border-bottom: 2px solid #7FC5DC;
 }
 
 #home-a .specials {
@@ -193,11 +227,21 @@ img {
 
 #home-b .general li.general-title {
   font-size: 1.5rem;
+  color: #E8E163;
 }
 
 #home-b .general li.general-info {
   font-size: 1rem;
   font-weight: bold;
+  color: white;
+}
+
+#home-b .general li.general-info > a {
+  color: white;
+}
+
+#home-b .general li.general-info > a span.color-link {
+  color: #4888C8;
 }
 
 #home-b .general img[class^="icon-"] {
@@ -210,10 +254,134 @@ img {
 }
 
 #home-b .general div:nth-child(odd) {
-  background-color: lightslategray;
+  background-color: #0B1E38;
 }
 
 #home-b .general div:nth-child(even) {
-  background-color: lightpink;
+  background-color: #173679;
+}
+
+#home-c h2.section-title {
+  display: inline;
+  border-bottom: 2px solid #7FC5DC;
+}
+
+#home-c .process {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+
+#home-c .process img[class^="icon-"] {
+  width: 70px;
+  height: 70px;
+}
+
+#home-c .process h3 {
+  margin-top: -10px;
+}
+
+#about-a h2.section-title {
+  display: inline;
+  border-bottom: 2px solid #7FC5DC;
+}
+
+#about-a .about-info {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'bioimage bio bio' 'reading anime video';
+  grid-gap: 1.2rem;
+}
+
+#about-a .bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+}
+
+#about-a .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  border-left: 3px solid #7FC5DC;
+  padding: 0.8rem;
+}
+
+#about-a .hobby-reading {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: reading;
+}
+
+#about-a .hobby-anime {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: anime;
+}
+
+#about-a .hobby-video-games {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: video;
+}
+
+#about-a img[class^="icon-"] {
+  width: 80px;
+  height: 80px;
+}
+
+#about-a h4 {
+  font-size: 20px;
+  display: inline;
+  border-bottom: 2px solid #7FC5DC;
+}
+
+#about-a div.bio > p {
+  font-size: 18px;
+}
+
+#about-a div.bio > p:nth-of-type(1),
+#about-a div.bio > p:nth-of-type(2) {
+  display: inline-block;
+  border-bottom: 2px solid #0B1E38;
+}
+
+#main-footer {
+  background-color: #0B1E38;
+  color: white;
+  height: 4rem;
+}
+
+#main-footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px white solid;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#main-footer .footer-content .social .fab:hover {
+  background-color: #7FC5DC;
+}
+
+#main-footer .footer-content .social a {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
