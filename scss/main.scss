@@ -271,7 +271,6 @@ img {
 
         &.general-title {
           font-size: 1.5rem;
-          color: $link-color;
         }
 
         &.general-info {
@@ -285,7 +284,7 @@ img {
         }
 
         &.general-info > a span.color-link {
-          color: $link-hover-color;
+          color: #0069AB;
         }
       }
 
@@ -298,11 +297,11 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background-color: $dark-color;
+          background-color: #989AB9;
         }
 
         &:nth-child(even) {
-          background-color: $medium-color;
+          background-color: #BABBD0;
         }
       }
     }
@@ -315,6 +314,7 @@ img {
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 1.5rem;
       text-align: center;
+      margin-bottom: 35px;
 
       img[class^="icon-"] {
         width: 70px;
@@ -379,6 +379,7 @@ img {
 
     div.bio > p {
       padding-bottom: 16px;
+      line-height: 2;
     }
 
     div.bio > p:nth-of-type(1),
@@ -452,6 +453,10 @@ img {
 
   // Resume Section B: Education
   &-b {
+    hr {
+      border-top: 2px solid rgb(153, 151, 151);
+    }
+
     h2.section-title {
       border: none;
     }
@@ -498,6 +503,7 @@ img {
 
       ul {
         grid-area: ul;
+        line-height: 2;
       }
     }
 
@@ -525,6 +531,7 @@ img {
   
         ul {
           grid-area: ul;
+          line-height: 2;
         }
 
     }
@@ -537,7 +544,6 @@ img {
         "location school time"
         "ul ul ul";
       grid-gap: 1.0rem 2.5rem;
-      margin-bottom: 75px;
 
         .location {
           grid-area: location;
@@ -553,10 +559,106 @@ img {
   
         ul {
           grid-area: ul;
+          line-height: 2;
         }
 
     }
 
+  }
+
+  // Resume Section C: Software Projects
+  &-c {
+    hr {
+      border-top: 2px solid rgb(153, 151, 151);
+    }
+
+    h2.section-title {
+      border: none;
+    }
+
+    .vehicle-reg-sys {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 0.3rem 2.5rem;
+      grid-template-areas: 
+      'project-name'
+      'ul';
+      margin-bottom: 50px;
+      
+
+      .project-name {
+        grid-area: project-name;
+        font-weight: 900;
+        font-size: 20px;
+      }
+
+      ul {
+        grid-area: ul;
+        font-size: 19px;
+
+        li {
+          list-style: disc inside none;
+          line-height: 2;
+        }
+      }
+
+    }
+
+    .website-for-friend {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 0.3rem 2.5rem;
+      grid-template-areas: 
+      'project-name'
+      'ul';
+      
+
+      .project-name {
+        grid-area: project-name;
+        font-weight: 900;
+        font-size: 20px;
+      }
+
+      a span.staple {
+        color: black;
+      }
+
+      a span.link {
+        color: $link-hover-color;
+      }
+
+      ul {
+        grid-area: ul;
+        font-size: 19px;
+
+        li {
+          list-style: disc inside none;
+          line-height: 2;
+        }
+      }
+
+    }
+  }
+
+  // Resume Section D: Skills
+  &-d {
+    hr {
+      border-top: 2px solid rgb(153, 151, 151);
+    }
+
+    h2.section-title {
+      border: none;
+    }
+
+    .skills {
+      font-size: 20px;
+
+      span.staple {
+        color: lightskyblue;
+      }
+    }
   }
 }
 

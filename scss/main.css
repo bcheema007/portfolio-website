@@ -223,7 +223,6 @@ img {
 
 #home-b .general li.general-title {
   font-size: 1.5rem;
-  color: #e8e163;
 }
 
 #home-b .general li.general-info {
@@ -237,7 +236,7 @@ img {
 }
 
 #home-b .general li.general-info > a span.color-link {
-  color: #4888c8;
+  color: #0069AB;
 }
 
 #home-b .general img[class^="icon-"] {
@@ -250,11 +249,11 @@ img {
 }
 
 #home-b .general div:nth-child(odd) {
-  background-color: #0b1e38;
+  background-color: #989AB9;
 }
 
 #home-b .general div:nth-child(even) {
-  background-color: #173679;
+  background-color: #BABBD0;
 }
 
 #home-c .process {
@@ -264,6 +263,7 @@ img {
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 #home-c .process img[class^="icon-"] {
@@ -332,6 +332,7 @@ img {
 
 #about-a div.bio > p {
   padding-bottom: 16px;
+  line-height: 2;
 }
 
 #about-a div.bio > p:nth-of-type(1),
@@ -420,6 +421,10 @@ img {
   font-weight: 900;
 }
 
+#resume-b hr {
+  border-top: 2px solid #999797;
+}
+
 #resume-b h2.section-title {
   border: none;
 }
@@ -475,8 +480,8 @@ img {
 #resume-b .uni-tacoma ul {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: ul;
+  line-height: 2;
 }
 
 #resume-b .college {
@@ -512,8 +517,8 @@ img {
 #resume-b .college ul {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: ul;
+  line-height: 2;
 }
 
 #resume-b .uni-bothell {
@@ -525,7 +530,6 @@ img {
       grid-template-rows: repeat(1, 1fr);
       grid-template-areas: "location school time" "ul ul ul";
   grid-gap: 1.0rem 2.5rem;
-  margin-bottom: 75px;
 }
 
 #resume-b .uni-bothell .location {
@@ -549,8 +553,103 @@ img {
 #resume-b .uni-bothell ul {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: ul;
+  line-height: 2;
+}
+
+#resume-c hr {
+  border-top: 2px solid #999797;
+}
+
+#resume-c h2.section-title {
+  border: none;
+}
+
+#resume-c .vehicle-reg-sys {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0.3rem 2.5rem;
+      grid-template-areas: 'project-name' 'ul';
+  margin-bottom: 50px;
+}
+
+#resume-c .vehicle-reg-sys .project-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: project-name;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#resume-c .vehicle-reg-sys ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ul;
+  font-size: 19px;
+}
+
+#resume-c .vehicle-reg-sys ul li {
+  list-style: disc inside none;
+  line-height: 2;
+}
+
+#resume-c .website-for-friend {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0.3rem 2.5rem;
+      grid-template-areas: 'project-name' 'ul';
+}
+
+#resume-c .website-for-friend .project-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: project-name;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#resume-c .website-for-friend a span.staple {
+  color: black;
+}
+
+#resume-c .website-for-friend a span.link {
+  color: #4888c8;
+}
+
+#resume-c .website-for-friend ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ul;
+  font-size: 19px;
+}
+
+#resume-c .website-for-friend ul li {
+  list-style: disc inside none;
+  line-height: 2;
+}
+
+#resume-d hr {
+  border-top: 2px solid #999797;
+}
+
+#resume-d h2.section-title {
+  border: none;
+}
+
+#resume-d .skills {
+  font-size: 20px;
+}
+
+#resume-d .skills span.staple {
+  color: lightskyblue;
 }
 
 #main-footer {
