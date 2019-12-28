@@ -693,13 +693,6 @@ img {
       .text-input {
         padding: 0.5rem 1rem;
       }
-
-      .my-2 {
-        justify-self: center;
-        height: 20px;
-        align-self: center;
-        text-align: center;
-      }
     }
 
     // Instead of targeting btn-dark class directly, if you change the class to a class of btn-light then this selector of button will still take effect. Otherwise you would need to come back and change this if you has used btn-dark class.
