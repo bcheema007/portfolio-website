@@ -1,6 +1,6 @@
 // Variables
 $website-width: 1050px;
-$bg-image: url("../dist/img/myimg/anime-1.jpg");
+$bg-image: url("img/myimg/anime-1.jpg");
 $link-color: #e8e163;
 $link-hover-color: #4888c8;
 $main-color: #7fc5dc;
@@ -271,6 +271,7 @@ img {
 
         &.general-title {
           font-size: 1.5rem;
+          color: $link-color;
         }
 
         &.general-info {
@@ -284,7 +285,7 @@ img {
         }
 
         &.general-info > a span.color-link {
-          color: #0069ab;
+          color: $light-color;
         }
       }
 
@@ -297,11 +298,11 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background-color: #989ab9;
+          background-color: #304878;
         }
 
         &:nth-child(even) {
-          background-color: #babbd0;
+          background-color: #003d7a;
         }
       }
     }
@@ -692,6 +693,12 @@ img {
       .text-input {
         padding: 0.5rem 1rem;
       }
+
+      .my-2 {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+      }
     }
 
     // Instead of targeting btn-dark class directly, if you change the class to a class of btn-light then this selector of button will still take effect. Otherwise you would need to come back and change this if you has used btn-dark class.
@@ -861,7 +868,7 @@ img {
         }
 
         .hobby-reading {
-          margin-top: 50px;
+          margin-top: 20px;
         }
 
         .hobby-reading,
