@@ -211,6 +211,14 @@ img {
   height: 50px;
 }
 
+#home-a .specials h3 {
+  margin-bottom: 10px;
+}
+
+#home-a .specials div p {
+  font-size: 18px;
+}
+
 #home-b .general {
   display: -ms-grid;
   display: grid;
@@ -275,6 +283,11 @@ img {
 
 #home-c .process h3 {
   margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+#home-c .process div p {
+  font-size: 18px;
 }
 
 #about-a .about-info {
