@@ -271,7 +271,6 @@ img {
 
         &.general-title {
           font-size: 1.5rem;
-          color: $link-color;
         }
 
         &.general-info {
@@ -285,7 +284,7 @@ img {
         }
 
         &.general-info > a span.color-link {
-          color: $light-color;
+          color: $medium-color;
         }
       }
 
@@ -298,11 +297,11 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background-color: #304878;
+          background-color: #88c6fc;
         }
 
         &:nth-child(even) {
-          background-color: #003d7a;
+          background-color: #b9defe;
         }
       }
     }

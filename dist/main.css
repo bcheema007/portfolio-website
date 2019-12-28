@@ -223,7 +223,6 @@ img {
 
 #home-b .general li.general-title {
   font-size: 1.5rem;
-  color: #e8e163;
 }
 
 #home-b .general li.general-info {
@@ -237,7 +236,7 @@ img {
 }
 
 #home-b .general li.general-info > a span.color-link {
-  color: #8bafc7;
+  color: #173679;
 }
 
 #home-b .general img[class^="icon-"] {
@@ -250,11 +249,11 @@ img {
 }
 
 #home-b .general div:nth-child(odd) {
-  background-color: #304878;
+  background-color: #88c6fc;
 }
 
 #home-b .general div:nth-child(even) {
-  background-color: #003d7a;
+  background-color: #b9defe;
 }
 
 #home-c .process {
