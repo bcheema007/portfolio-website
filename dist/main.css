@@ -175,7 +175,7 @@ img {
 }
 
 #header-home {
-  background: url("../dist/img/myimg/anime-1.jpg") no-repeat center right/cover;
+  background: url("img/myimg/anime-1.jpg") no-repeat center right/cover;
   height: 100vh;
   color: white;
 }
@@ -191,7 +191,7 @@ img {
 }
 
 #header-inner {
-  background: url("../dist/img/myimg/anime-1.jpg") no-repeat 20% 10%/cover;
+  background: url("img/myimg/anime-1.jpg") no-repeat 20% 10%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #7fc5dc;
 }
@@ -278,7 +278,8 @@ img {
 #about-a .about-info {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "bioimage bio bio" "reading anime video";
+      grid-template-areas: "bioimage bio bio"
+ "reading anime video";
   grid-gap: 1.2rem;
 }
 
@@ -348,7 +349,9 @@ img {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "address address phone" "name name name" "github email email";
+      grid-template-areas: "address address phone"
+ "name name name"
+ "github email email";
   grid-gap: 1.5rem;
 }
 
@@ -450,7 +453,8 @@ img {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-      grid-template-areas: "location school time" "ul ul ul";
+      grid-template-areas: "location school time"
+ "ul ul ul";
   grid-gap: 1rem 2rem;
   margin-bottom: 75px;
 }
@@ -487,7 +491,8 @@ img {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-      grid-template-areas: "location school time" "ul ul ul";
+      grid-template-areas: "location school time"
+ "ul ul ul";
   grid-gap: 1rem 2.5rem;
   margin-bottom: 75px;
 }
@@ -524,7 +529,8 @@ img {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-      grid-template-areas: "location school time" "ul ul ul";
+      grid-template-areas: "location school time"
+ "ul ul ul";
   grid-gap: 1rem 2.5rem;
 }
 
@@ -569,7 +575,8 @@ img {
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
   grid-gap: 0.3rem 2.5rem;
-      grid-template-areas: "project-name" "ul";
+      grid-template-areas: "project-name"
+ "ul";
   margin-bottom: 50px;
 }
 
@@ -601,7 +608,8 @@ img {
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
   grid-gap: 0.3rem 2.5rem;
-      grid-template-areas: "project-name" "ul";
+      grid-template-areas: "project-name"
+ "ul";
 }
 
 #resume-c .website-for-friend .project-name {
@@ -651,7 +659,9 @@ img {
 #contact-a .text-fields {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "name email" "subject phone" "message message";
+      grid-template-areas: "name email"
+ "subject phone"
+ "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -824,7 +834,11 @@ img {
     font-size: 18px;
   }
   #about-a .about-info {
-        grid-template-areas: "bioimage" "bio" "reading" "anime" "video";
+        grid-template-areas: "bioimage"
+ "bio"
+ "reading"
+ "anime"
+ "video";
   }
   #about-a .about-info .bio {
     border-left: 3px solid #7fc5dc;
@@ -847,7 +861,11 @@ img {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "name" "email" "phone" "address" "github";
+        grid-template-areas: "name"
+ "email"
+ "phone"
+ "address"
+ "github";
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -893,7 +911,11 @@ img {
     text-align: center;
   }
   #contact-a .text-fields {
-        grid-template-areas: "name" "subject" "email" "phone" "message";
+        grid-template-areas: "name"
+ "subject"
+ "email"
+ "phone"
+ "message";
   }
   #contact-a .text-fields .text-input {
     margin: 0.5rem;
