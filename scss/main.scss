@@ -696,7 +696,6 @@ img {
 
     // Instead of targeting btn-dark class directly, if you change the class to a class of btn-light then this selector of button will still take effect. Otherwise you would need to come back and change this if you has used btn-dark class.
     button[type="submit"] {
-      margin-top: 0.85rem;
       background-color: #2b396e;
       width: 50%;
     }
