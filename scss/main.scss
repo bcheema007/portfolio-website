@@ -609,6 +609,41 @@ img {
       grid-template-areas:
         "project-name"
         "ul";
+      margin-bottom: 50px;
+
+      .project-name {
+        grid-area: project-name;
+        font-weight: 900;
+        font-size: 20px;
+      }
+
+      a span.staple {
+        color: black;
+      }
+
+      a span.link {
+        color: $link-hover-color;
+      }
+
+      ul {
+        grid-area: ul;
+        font-size: 19px;
+
+        li {
+          list-style: disc inside none;
+          line-height: 2;
+        }
+      }
+    }
+
+    .portfolio-website {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 0.3rem 2.5rem;
+      grid-template-areas:
+        "project-name"
+        "ul";
 
       .project-name {
         grid-area: project-name;

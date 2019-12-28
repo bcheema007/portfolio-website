@@ -604,6 +604,7 @@ img {
       grid-template-rows: repeat(1, 1fr);
   grid-gap: 0.3rem 2.5rem;
       grid-template-areas: "project-name" "ul";
+  margin-bottom: 50px;
 }
 
 #resume-c .website-for-friend .project-name {
@@ -630,6 +631,45 @@ img {
 }
 
 #resume-c .website-for-friend ul li {
+  list-style: disc inside none;
+  line-height: 2;
+}
+
+#resume-c .portfolio-website {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0.3rem 2.5rem;
+      grid-template-areas: "project-name" "ul";
+}
+
+#resume-c .portfolio-website .project-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: project-name;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#resume-c .portfolio-website a span.staple {
+  color: black;
+}
+
+#resume-c .portfolio-website a span.link {
+  color: #4888c8;
+}
+
+#resume-c .portfolio-website ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ul;
+  font-size: 19px;
+}
+
+#resume-c .portfolio-website ul li {
   list-style: disc inside none;
   line-height: 2;
 }
