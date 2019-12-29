@@ -279,6 +279,7 @@ img {
 
         &.general-title {
           font-size: 1.5rem;
+          color: $link-hover-color;
         }
 
         &.general-info {
@@ -292,7 +293,7 @@ img {
         }
 
         &.general-info > a span.color-link {
-          color: $link-hover-color;
+          color: rgb(67, 181, 226);
         }
       }
 
@@ -305,11 +306,11 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background: linear-gradient(45deg, #355c7d, #6c5b7b, #c06c84);
+          background: linear-gradient(45deg, #000428, #004e92);
         }
 
         &:nth-child(even) {
-          background: linear-gradient(45deg, #f0f2f0, #000c40);
+          background: linear-gradient(45deg, #4b6cb7, #182848);
         }
       }
     }
