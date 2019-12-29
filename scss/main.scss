@@ -602,6 +602,14 @@ img {
         font-size: 20px;
       }
 
+      a span.staple {
+        color: black;
+      }
+
+      a span.link {
+        color: $link-hover-color;
+      }
+
       ul {
         grid-area: ul;
         font-size: 19px;

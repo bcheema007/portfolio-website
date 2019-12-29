@@ -595,6 +595,14 @@ img {
   font-size: 20px;
 }
 
+#resume-c .vehicle-reg-sys a span.staple {
+  color: black;
+}
+
+#resume-c .vehicle-reg-sys a span.link {
+  color: #4888c8;
+}
+
 #resume-c .vehicle-reg-sys ul {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
