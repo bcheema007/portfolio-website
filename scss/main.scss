@@ -279,7 +279,6 @@ img {
 
         &.general-title {
           font-size: 1.5rem;
-          color: lightskyblue;
         }
 
         &.general-info {
@@ -293,7 +292,7 @@ img {
         }
 
         &.general-info > a span.color-link {
-          color: $link-color;
+          color: $link-hover-color;
         }
       }
 
@@ -306,11 +305,11 @@ img {
         padding: 3rem 0;
 
         &:nth-child(odd) {
-          background-color: $dark-color;
+          background: linear-gradient(45deg, #355c7d, #6c5b7b, #c06c84);
         }
 
         &:nth-child(even) {
-          background-color: $medium-color;
+          background: linear-gradient(45deg, #f0f2f0, #000c40);
         }
       }
     }

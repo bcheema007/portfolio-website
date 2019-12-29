@@ -232,7 +232,6 @@ img {
 
 #home-b .general li.general-title {
   font-size: 1.5rem;
-  color: lightskyblue;
 }
 
 #home-b .general li.general-info {
@@ -246,7 +245,7 @@ img {
 }
 
 #home-b .general li.general-info > a span.color-link {
-  color: #e8e163;
+  color: #4888c8;
 }
 
 #home-b .general img[class^="icon-"] {
@@ -259,11 +258,11 @@ img {
 }
 
 #home-b .general div:nth-child(odd) {
-  background-color: #0b1e38;
+  background: linear-gradient(45deg, #355c7d, #6c5b7b, #c06c84);
 }
 
 #home-b .general div:nth-child(even) {
-  background-color: #173679;
+  background: linear-gradient(45deg, #f0f2f0, #000c40);
 }
 
 #home-c .process {
