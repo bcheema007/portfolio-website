@@ -727,24 +727,33 @@ img {
       // Grid Areas
       .name-input {
         grid-area: name;
+        font-family: inherit;
+        font-size: 16px;
       }
 
       .subject-input {
         grid-area: subject;
+        font-family: inherit;
+        font-size: 16px;
       }
 
       .email-input {
         grid-area: email;
+        font-family: inherit;
+        font-size: 16px;
       }
 
       .phone-input {
         grid-area: phone;
+        font-family: inherit;
+        font-size: 16px;
       }
 
       .message-input {
-        font-family: inherit;
         grid-area: message;
         height: 100px;
+        font-family: inherit;
+        font-size: 16px;
       }
 
       .text-input {
@@ -756,6 +765,8 @@ img {
     button[type="submit"] {
       background-color: #2b396e;
       width: 50%;
+      font-family: inherit;
+      font-size: 18px;
     }
 
     button[type="submit"]:hover {

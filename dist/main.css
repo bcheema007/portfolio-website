@@ -723,33 +723,42 @@ img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: name;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 #contact-a .text-fields .subject-input {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: subject;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 #contact-a .text-fields .email-input {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: email;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 #contact-a .text-fields .phone-input {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: phone;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 #contact-a .text-fields .message-input {
-  font-family: inherit;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: message;
   height: 100px;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 #contact-a .text-fields .text-input {
@@ -759,6 +768,8 @@ img {
 #contact-a button[type="submit"] {
   background-color: #2b396e;
   width: 50%;
+  font-family: inherit;
+  font-size: 18px;
 }
 
 #contact-a button[type="submit"]:hover {
