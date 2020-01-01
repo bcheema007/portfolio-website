@@ -744,6 +744,7 @@ img {
 }
 
 #contact-a .text-fields .message-input {
+  font-family: inherit;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
